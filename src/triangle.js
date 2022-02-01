@@ -9,10 +9,7 @@ Triangle.prototype.checkType = function() {
     return "not a triangle";
   } else if ((this.side1 !== this.side2) && ((this.side1 !== this.side3)) && ((this.side2 !== this.side3))) {
     return "scalene triangle";
-  }
+  }  else if ((this.side1 === this.side2) || ((this.side1 === this.side3)) || ((this.side2 === this.side3))) {
+      return "isosceles triangle";
+    }
 };
-
-test('should correctly determine whether three lengths make an isosceles triangle', () => {
-  const isocTriangle = new Triangle(5,5,7)
-  expect(isocTriangle.checkType()).toEqual("isosceles triangle");
-});
