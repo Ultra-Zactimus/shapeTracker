@@ -1,6 +1,16 @@
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+import Triangle from './triangle.js';
+
+
 $(document).ready(function(){
   $("tirangle-checker-form").submit(function(event){
     event.preventDefault();
+  /* eslint-disable no-debugger */
+  debugger;
+  /* eslint-enable no-debugger */
     const length1 = $("#length1").val();
     const length2 = $("#length2").val();
     const length3 = $("#length3").val();
